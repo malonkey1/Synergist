@@ -2,7 +2,7 @@ Power Synergist_Assault.Thorny_Assault.Thorny_Darts
 {
 	Name                 "Thorny_Darts"                
 	DisplayName          "P284690477"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kLethal_Attack
@@ -128,7 +128,7 @@ Power Synergist_Assault.Thorny_Assault.Skewer
 {
 	Name                 "Skewer"                      
 	DisplayName          "P788360112"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kLethal_Attack
@@ -278,7 +278,7 @@ Power Synergist_Assault.Thorny_Assault.Fling_Thorns
 {
 	Name                 "Fling_Thorns"                
 	DisplayName          "P1788509851"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kLethal_Attack
@@ -405,7 +405,7 @@ Power Synergist_Assault.Thorny_Assault.Seed_Partner
 {
 	Name                 "Seed_Partner"              
 	DisplayName          "Seed Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -485,7 +485,7 @@ Power Synergist_Assault.Thorny_Assault.Impale
 {
 	Name                 "Impale"                      
 	DisplayName          "P781056268"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kLethal_Attack
@@ -767,7 +767,7 @@ Power Synergist_Assault.Thorny_Assault.Thorn_Burst
 {
 	Name                 "Thorn_Burst"                 
 	DisplayName          "P2861025649"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kLethal_Attack
@@ -894,7 +894,7 @@ Power Synergist_Assault.Thorny_Assault.Ripper
 {
 	Name                 "Ripper"                      
 	DisplayName          "P4259928669"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kLethal_Attack
@@ -1115,7 +1115,7 @@ Power Synergist_Assault.Thorny_Assault.Cultivate_Partner
 {
 	Name                 "Cultivate_Partner"              
 	DisplayName          "Cultivate Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -1195,7 +1195,7 @@ Power Synergist_Assault.Thorny_Assault.Thorn_Barrage
 {
 	Name                 "Thorn_Barrage"               
 	DisplayName          "P3090654239"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kLethal_Attack

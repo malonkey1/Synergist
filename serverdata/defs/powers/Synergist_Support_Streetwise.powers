@@ -2,7 +2,7 @@ Power Synergist_Support.Streetwise.Call_Bruiser
 {
 	Name                 "Call_Bruiser"                
 	DisplayName          "P937187544"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -59,7 +59,7 @@ Power Synergist_Support.Streetwise.Mind_Over_Body
 {
 	Name                 "Mind_Over_Body"              
 	DisplayName          "P2948774010"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -372,7 +372,7 @@ Power Synergist_Support.Streetwise.Fast_Healing
 {
 	Name                 "Fast_Healing"                
 	DisplayName          "P3913785951"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kAuto
 	Accuracy             1
 	EntsAffected         kCaster, kMyPet
@@ -441,7 +441,7 @@ Power Synergist_Support.Streetwise.Indomitable_Will
 {
 	Name                 "Indomitable_Will"            
 	DisplayName          "P4268714550"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -1262,7 +1262,7 @@ Power Synergist_Support.Streetwise.Rally
 {
 	Name                 "Rally"
 	DisplayName          "Rally"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -1360,7 +1360,7 @@ Power Synergist_Support.Streetwise.Rise_to_the_Challenge
 {
 	Name                 "Rise_to_the_Challenge"       
 	DisplayName          "P1657672186"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kFoe
@@ -1553,7 +1553,7 @@ Power Synergist_Support.Streetwise.Gang_War
 {
 	Name                 "Gang_War"                    
 	DisplayName          "P2038123334"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kFoe
@@ -1924,7 +1924,7 @@ Power Synergist_Support.Streetwise.Resurgence
 {
 	Name                 "Resurgence"                  
 	DisplayName          "P2219956264"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -2577,7 +2577,7 @@ Power Synergist_Support.Streetwise.Strength_of_Will
 {
 	Name                 "Strength_of_Will"            
 	DisplayName          "P1043791663"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster

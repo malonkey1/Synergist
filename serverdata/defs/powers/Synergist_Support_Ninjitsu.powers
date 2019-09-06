@@ -2,7 +2,7 @@ Power Synergist_Support.Ninjitsu.Call_Jounin
 {
 	Name                 "Call_Jounin"                 
 	DisplayName          "P1570421815"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -85,7 +85,7 @@ Power Synergist_Support.Ninjitsu.Ninja_Reflexes
 {
 	Name                 "Ninja_Reflexes"              
 	DisplayName          "P3595433736"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -282,7 +282,7 @@ Power Synergist_Support.Ninjitsu.Danger_Sense
 {
 	Name                 "Danger_Sense"                
 	DisplayName          "P3260963519"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -677,7 +677,7 @@ Power Synergist_Support.Ninjitsu.Caltrops
 {
 	Name                 "Caltrops"                    
 	DisplayName          "P4162546018"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -734,7 +734,7 @@ Power Synergist_Support.Ninjitsu.Kuji-In_Rin
 {
 	Name                 "Kuji-In_Rin"                 
 	DisplayName          "P4184330932"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -1206,7 +1206,7 @@ Power Synergist_Support.Ninjitsu.Kuji-In_Sha
 {
 	Name                 "Kuji-In_Sha"                 
 	DisplayName          "P1895928915"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -1281,7 +1281,7 @@ Power Synergist_Support.Ninjitsu.Smoke_Flash
 {
 	Name                 "Smoke_Flash"                 
 	DisplayName          "P3600193279"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.4
 	EntsAffected         kFoe
@@ -1361,7 +1361,7 @@ Power Synergist_Support.Ninjitsu.Blinding_Powder
 {
 	Name                 "Blinding_Powder"             
 	DisplayName          "P521479399"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack
@@ -1567,7 +1567,7 @@ Power Synergist_Support.Ninjitsu.Kuji-In_Retsu
 {
 	Name                 "Kuji-In_Retsu"               
 	DisplayName          "P3602318660"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster, kFriend

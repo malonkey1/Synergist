@@ -2,7 +2,7 @@ Power Synergist_Support.Natural_Instinct.Summon_Dire_Wolf
 {
 	Name                 "Summon_Dire_Wolf"            
 	DisplayName          "P2335021461"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -59,7 +59,7 @@ Power Synergist_Support.Natural_Instinct.Reconstruction
 {
 	Name                 "Reconstruction"              
 	DisplayName          "P2739289019"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -156,7 +156,7 @@ Power Synergist_Support.Natural_Instinct.Wild_Growth
 {
 	Name                 "Wild_Growth"                 
 	DisplayName          "P2637559551"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kFriend, kCaster
@@ -408,7 +408,7 @@ Power Synergist_Support.Natural_Instinct.Integration
 {
 	Name                 "Integration"                 
 	DisplayName          "P2071323212"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -1134,7 +1134,7 @@ Power Synergist_Support.Natural_Instinct.Lifegiving_Spores
 {
 	Name                 "Lifegiving_Spores"           
 	DisplayName          "P1734575632"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster
@@ -1194,7 +1194,7 @@ Power Synergist_Support.Natural_Instinct.Wild_Bastion
 {
 	Name                 "Wild_Bastion"                
 	DisplayName          "P1861703090"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -1320,7 +1320,7 @@ Power Synergist_Support.Natural_Instinct.Instant_Healing
 {
 	Name                 "Instant_Healing"             
 	DisplayName          "P2482136037"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -1481,7 +1481,7 @@ Power Synergist_Support.Natural_Instinct.Revive
 {
 	Name                 "Revive"                      
 	DisplayName          "P3971593258"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -1622,7 +1622,7 @@ Power Synergist_Support.Natural_Instinct.Moment_of_Glory
 {
 	Name                 "Moment_of_Glory"             
 	DisplayName          "P3083458275"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster, kFriend

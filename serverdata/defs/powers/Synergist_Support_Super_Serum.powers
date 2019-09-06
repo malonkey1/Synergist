@@ -2,7 +2,7 @@ Power Synergist_Support.Super_Serum.Commando
 {
 	Name                 "Commando"                    
 	DisplayName          "P2001284405"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -59,7 +59,7 @@ Power Synergist_Support.Super_Serum.Temp_Invulnerability
 {
 	Name                 "Temp_Invulnerability"        
 	DisplayName          "P1042181802"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -322,7 +322,7 @@ Power Synergist_Support.Super_Serum.Weaken
 {
 	Name                 "Weaken"                      
 	DisplayName          "P2214790859"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAoE_Attack
@@ -1926,7 +1926,7 @@ Power Synergist_Support.Super_Serum.Resist_Elements
 {
 	Name                 "Resist_Elements"             
 	DisplayName          "P2314917890"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -2190,7 +2190,7 @@ Power Synergist_Support.Super_Serum.Antidote
 {
 	Name                 "Antidote"                    
 	DisplayName          "P3729372453"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kFriend
@@ -2596,7 +2596,7 @@ Power Synergist_Support.Super_Serum.Resist_Energies
 {
 	Name                 "Resist_Energies"             
 	DisplayName          "P4863078"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -2797,7 +2797,7 @@ Power Synergist_Support.Super_Serum.Elixir_of_Life
 {
 	Name                 "Elixir_of_Life"              
 	DisplayName          "P2164945405"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kDeadPlayerFriend
@@ -3383,7 +3383,7 @@ Power Synergist_Support.Super_Serum.Invincibility
 {
 	Name                 "Invincibility"               
 	DisplayName          "P2665699222"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kFoe
@@ -4056,7 +4056,7 @@ Power Synergist_Support.Super_Serum.Serum
 {
 	Name                 "Serum"                       
 	DisplayName          "P2203543903"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kMyPet, kCaster

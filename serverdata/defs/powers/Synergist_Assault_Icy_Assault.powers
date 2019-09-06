@@ -5,7 +5,7 @@ Power Synergist_Assault.Icy_Assault.Ice_Bolt
 {
 	Name                 "Ice_Bolt"                    
 	DisplayName          "P2631953439"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kCold_Attack
@@ -240,7 +240,7 @@ Power Synergist_Assault.Icy_Assault.Ice_Sword
 {
 	Name                 "Ice_Sword"                   
 	DisplayName          "P2306375624"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kLethal_Attack, kCold_Attack
@@ -499,7 +499,7 @@ Power Synergist_Assault.Icy_Assault.Ice_Sword_Circle
 {
 	Name                 "Ice_Sword_Circle"            
 	DisplayName          "P1820138313"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kLethal_Attack, kCold_Attack
@@ -737,7 +737,7 @@ Power Synergist_Assault.Icy_Assault.Chill_Partner
 {
 	Name                 "Chill_Partner"              
 	DisplayName          "Chill Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -817,7 +817,7 @@ Power Synergist_Assault.Icy_Assault.Ice_Blast
 {
 	Name                 "Ice_Blast"                   
 	DisplayName          "P1574051147"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kCold_Attack
@@ -1052,7 +1052,7 @@ Power Synergist_Assault.Icy_Assault.Frost_Breath
 {
 	Name                 "Frost_Breath"                
 	DisplayName          "P2163593760"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kAOE_Attack, kCold_Attack
@@ -1240,7 +1240,7 @@ Power Synergist_Assault.Icy_Assault.Greater_Ice_Sword
 {
 	Name                 "Greater_Ice_Sword"           
 	DisplayName          "P341049142"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kMelee_Attack, kLethal_Attack, kCold_Attack
@@ -1521,7 +1521,7 @@ Power Synergist_Assault.Icy_Assault.Cryolize_Partner
 {
 	Name                 "Cryolize_Partner"              
 	DisplayName          "Cryolize Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -1601,7 +1601,7 @@ Power Synergist_Assault.Icy_Assault.Bitter_Ice_Blast
 {
 	Name                 "Bitter_Ice_Blast"            
 	DisplayName          "P446568979"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kCold_Attack

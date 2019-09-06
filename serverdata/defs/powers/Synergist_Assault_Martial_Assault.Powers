@@ -2,7 +2,7 @@ Power Synergist_Assault.Martial_Assault.Shuriken_Throw
 {
 	Name                 "Shuriken_Throw"              
 	DisplayName          "P991737560"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kLethal_Attack
@@ -81,7 +81,7 @@ Power Synergist_Assault.Martial_Assault.Thunder_Kick
 {
 	Name                 "Thunder_Kick"                
 	DisplayName          "P3218679137"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.05
 	AttackTypes          kMelee_Attack, kSmashing_Attack
@@ -218,7 +218,7 @@ Power Synergist_Assault.Martial_Assault.Trick_Shot
 {
 	Name                 "Trick_Shot"                  
 	DisplayName          "P1901682939"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack, kEnergy_Attack
@@ -369,7 +369,7 @@ Power Synergist_Assault.Martial_Assault.Train_Partner
 {
 	Name                 "Train_Partner"              
 	DisplayName          "Train Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -449,7 +449,7 @@ Power Synergist_Assault.Martial_Assault.Spinning_Kick
 {
 	Name                 "Spinning_Kick"               
 	DisplayName          "P2966841704"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.05
 	AttackTypes          kMelee_Attack, kSmashing_Attack
@@ -579,7 +579,7 @@ Power Synergist_Assault.Martial_Assault.Dragons_Tail
 {
 	Name                 "Dragons_Tail"                
 	DisplayName          "P3855064031"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.05
 	AttackTypes          kMelee_Attack, kSmashing_Attack
@@ -705,7 +705,7 @@ Power Synergist_Assault.Martial_Assault.Masterful_Throw
 {
 	Name                 "Masterful_Throw"             
 	DisplayName          "P3417996420"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
@@ -861,7 +861,7 @@ Power Synergist_Assault.Martial_Assault.Complete_Training
 {
 	Name                 "Complete_Training"              
 	DisplayName          "Complete Training"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -941,7 +941,7 @@ Power Synergist_Assault.Martial_Assault.Explosive_Shuriken
 {
 	Name                 "Explosive_Shuriken"          
 	DisplayName          "P2740993693"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAoE_Attack, kLethal_Attack

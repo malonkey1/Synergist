@@ -2,7 +2,7 @@ Power Synergist_Support.Nether_Force.Lich
 {
 	Name                 "Lich"                        
 	DisplayName          "P3124304184"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -61,7 +61,7 @@ Power Synergist_Support.Nether_Force.Dark_Embrace
 {
 	Name                 "Dark_Embrace"                
 	DisplayName          "P3063295318"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kFriend, kCaster
@@ -461,7 +461,7 @@ Power Synergist_Support.Nether_Force.Murky_Cloud
 {
 	Name                 "Murky_Cloud"                 
 	DisplayName          "P2114757221"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kFriend, kCaster
@@ -949,7 +949,7 @@ Power Synergist_Support.Nether_Force.Twilight_Grasp
 {
 	Name                 "Twilight_Grasp"              
 	DisplayName          "P4164717180"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
@@ -1243,7 +1243,7 @@ Power Synergist_Support.Nether_Force.Obsidian_Shield
 {
 	Name                 "Obsidian_Shield"             
 	DisplayName          "P2987398367"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kFriend, kCaster
@@ -1857,7 +1857,7 @@ Power Synergist_Support.Nether_Force.Fearsome_Stare
 {
 	Name                 "Fearsome_Stare"              
 	DisplayName          "P2548525324"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kNegative_Energy_Attack
@@ -1990,7 +1990,7 @@ Power Synergist_Support.Nether_Force.Cloak_of_Darkness
 {
 	Name                 "Cloak_of_Darkness"           
 	DisplayName          "P1123987796"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	GroupMembership      kStealth_Group
@@ -3201,7 +3201,7 @@ Power Synergist_Support.Nether_Force.Oppressive_Gloom
 {
 	Name                 "Oppressive_Gloom"            
 	DisplayName          "P4259874860"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kNegative_Energy_Attack
@@ -3308,7 +3308,7 @@ Power Synergist_Support.Nether_Force.Soul_Transfer
 {
 	Name                 "Soul_Transfer"               
 	DisplayName          "P4224542807"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kNegative_Energy_Attack

@@ -2,7 +2,7 @@ Power Synergist_Assault.Electricity_Assault.Charged_Bolts
 {
 	Name                 "Charged_Bolts"              
 	DisplayName          "P406048882"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kEnergy_Attack
@@ -172,7 +172,7 @@ Power Synergist_Assault.Electricity_Assault.Charged_Brawl
 {
 	Name                 "Charged_Brawl"               
 	DisplayName          "P347968085"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack, kEnergy_Attack
@@ -553,7 +553,7 @@ Power Synergist_Assault.Electricity_Assault.Lightning_Bolt
 {
 	Name                 "Lightning_Bolt"             
 	DisplayName          "P3269743464"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kEnergy_Attack
@@ -723,7 +723,7 @@ Power Synergist_Assault.Electricity_Assault.Charge_Partner
 {
 	Name                 "Charge_Partner"              
 	DisplayName          "Charge Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -803,7 +803,7 @@ Power Synergist_Assault.Electricity_Assault.Havok_Punch
 {
 	Name                 "Havok_Punch"                 
 	DisplayName          "P632018255"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack, kEnergy_Attack
@@ -1188,7 +1188,7 @@ Power Synergist_Assault.Electricity_Assault.Zapp
 {
 	Name                 "Zapp"              
 	DisplayName          "P3017513223"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kRanged_Attack, kEnergy_Attack
@@ -1410,7 +1410,7 @@ Power Synergist_Assault.Electricity_Assault.Static_Discharge
 {
 	Name                 "Static_Discharge"              
 	DisplayName          "P2901832587"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kEnergy_Attack
@@ -1577,7 +1577,7 @@ Power Synergist_Assault.Electricity_Assault.Electrify_Partner
 {
 	Name                 "Electrify_Partner"              
 	DisplayName          "Electrify Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -1656,7 +1656,7 @@ Power Synergist_Assault.Electricity_Assault.Voltaic_Sentinel
 {
 	Name                 "Voltaic_Sentinel"
 	DisplayName          "P4186800839"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             2
 	EntsAffected         kCaster

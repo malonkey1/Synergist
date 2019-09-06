@@ -4,7 +4,7 @@ Power Synergist_Assault.Energy_Assault.Power_Bolt
 {
 	Name                 "Power_Bolt"                  
 	DisplayName          "P3452065131"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kEnergy_Attack
@@ -179,7 +179,7 @@ Power Synergist_Assault.Energy_Assault.Bone_Smasher
 {
 	Name                 "Bone_Smasher"                
 	DisplayName          "P3754407115"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack, kEnergy_Attack
@@ -440,7 +440,7 @@ Power Synergist_Assault.Energy_Assault.Power_Push
 {
 	Name                 "Power_Push"                  
 	DisplayName          "P4281908744"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.4
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kEnergy_Attack
@@ -615,7 +615,7 @@ Power Synergist_Assault.Energy_Assault.Energize_Partner
 {
 	Name                 "Energize_Partner"              
 	DisplayName          "Energize Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -695,7 +695,7 @@ Power Synergist_Assault.Energy_Assault.Power_Blast
 {
 	Name                 "Power_Blast"                 
 	DisplayName          "P183208535"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kEnergy_Attack
@@ -870,7 +870,7 @@ Power Synergist_Assault.Energy_Assault.Total_Focus
 {
 	Name                 "Total_Focus"                 
 	DisplayName          "P479970076"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kMelee_Attack, kSmashing_Attack, kEnergy_Attack
@@ -1157,7 +1157,7 @@ Power Synergist_Assault.Energy_Assault.Sniper_Blast
 {
 	Name                 "Sniper_Blast"                
 	DisplayName          "P1111427260"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kEnergy_Attack
@@ -1384,7 +1384,7 @@ Power Synergist_Assault.Energy_Assault.Overload_Partner
 {
 	Name                 "Overload_Partner"              
 	DisplayName          "Overload Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -1464,7 +1464,7 @@ Power Synergist_Assault.Energy_Assault.Power_Burst
 {
 	Name                 "Power_Burst"                 
 	DisplayName          "P966430571"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kSmashing_Attack, kEnergy_Attack

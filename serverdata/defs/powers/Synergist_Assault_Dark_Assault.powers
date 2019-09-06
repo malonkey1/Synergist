@@ -4,7 +4,7 @@ Power Synergist_Assault.Dark_Assault.Dark_Blast
 {
 	Name                 "Dark_Blast"                  
 	DisplayName          "P369601562"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
@@ -107,7 +107,7 @@ Power Synergist_Assault.Dark_Assault.Smite
 {
 	Name                 "Smite"                       
 	DisplayName          "P1095808082"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack, kNegative_Energy_Attack
@@ -260,7 +260,7 @@ Power Synergist_Assault.Dark_Assault.Gloom
 {
 	Name                 "Gloom"                       
 	DisplayName          "P3488406895"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
@@ -363,7 +363,7 @@ Power Synergist_Assault.Dark_Assault.Imbue_Shadows
 {
 	Name                 "Imbue_Shadows"              
 	DisplayName          "Imbue Shadows"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -443,7 +443,7 @@ Power Synergist_Assault.Dark_Assault.Night_Fall
 {
 	Name                 "Night_Fall"                  
 	DisplayName          "P3659140167"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kNegative_Energy_Attack
@@ -547,7 +547,7 @@ Power Synergist_Assault.Dark_Assault.Life_Drain
 {
 	Name                 "Life_Drain"                  
 	DisplayName          "P1678761175"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
@@ -673,7 +673,7 @@ Power Synergist_Assault.Dark_Assault.Moon_Beam
 {
 	Name                 "Moon_Beam"                
 	DisplayName          "P2117788085"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
@@ -828,7 +828,7 @@ Power Synergist_Assault.Dark_Assault.Imbue_Darkness
 {
 	Name                 "Imbue_Darkness"              
 	DisplayName          "Imbue Darkness"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -908,7 +908,7 @@ Power Synergist_Assault.Dark_Assault.Midnight_Grasp
 {
 	Name                 "Midnight_Grasp"              
 	DisplayName          "P3103415061"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kNegative_Energy_Attack

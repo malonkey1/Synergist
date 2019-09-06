@@ -2,7 +2,7 @@ Power Synergist_Support.Hellfire_Aura.Summon_Demons
 {
 	Name                 "Summon_Demons"               
 	DisplayName          "P1277955949"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -85,7 +85,7 @@ Power Synergist_Support.Hellfire_Aura.Fire_Shield
 {
 	Name                 "Fire_Shield"                 
 	DisplayName          "P1503020951"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -524,7 +524,7 @@ Power Synergist_Support.Hellfire_Aura.Healing_Flames
 {
 	Name                 "Healing_Flames"              
 	DisplayName          "P1655585835"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -599,7 +599,7 @@ Power Synergist_Support.Hellfire_Aura.Plasma_Shield
 {
 	Name                 "Plasma_Shield"               
 	DisplayName          "P1907338798"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kCaster, kFriend
@@ -1190,7 +1190,7 @@ Power Synergist_Support.Hellfire_Aura.Forge
 {
 	Name                 "Forge"                       
 	DisplayName          "P851798312"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kFriend
@@ -1414,7 +1414,7 @@ Power Synergist_Support.Hellfire_Aura.Thaw
 {
 	Name                 "Thaw"                        
 	DisplayName          "P2439537416"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kFriend
@@ -1820,7 +1820,7 @@ Power Synergist_Support.Hellfire_Aura.Hell_on_Earth
 {
 	Name                 "Hell_on_Earth"               
 	DisplayName          "P3536278430"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kMyPet
@@ -2271,7 +2271,7 @@ Power Synergist_Support.Hellfire_Aura.Fiery_Embrace
 {
 	Name                 "Fiery_Embrace"               
 	DisplayName          "P1798185134"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster, kMyPet
@@ -2503,7 +2503,7 @@ Power Synergist_Support.Hellfire_Aura.Infernal_Revival
 {
 	Name                 "Infernal_Revival"
 	DisplayName          "P4203838221"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kFoe, kDeadPlayerFriend

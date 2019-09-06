@@ -2,7 +2,7 @@ Power Synergist_Assault.Fiery_Assault.Flares
 {
 	Name                 "Flares"                      
 	DisplayName          "P828916130"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kFire_Attack
@@ -129,7 +129,7 @@ Power Synergist_Assault.Fiery_Assault.Incinerate
 {
 	Name                 "Incinerate"                  
 	DisplayName          "P3360343670"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kFire_Attack
@@ -257,7 +257,7 @@ Power Synergist_Assault.Fiery_Assault.Fire_Breath
 {
 	Name                 "Fire_Breath"                 
 	DisplayName          "P2101271196"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kAOE_Attack, kFire_Attack
@@ -363,7 +363,7 @@ Power Synergist_Assault.Fiery_Assault.Ignite_Partner
 {
 	Name                 "Ignite_Partner"              
 	DisplayName          "Ignite Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -443,7 +443,7 @@ Power Synergist_Assault.Fiery_Assault.Fire_Blast
 {
 	Name                 "Fire_Blast"                  
 	DisplayName          "P4178945378"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kFire_Attack
@@ -548,7 +548,7 @@ Power Synergist_Assault.Fiery_Assault.Combustion
 {
 	Name                 "Combustion"                  
 	DisplayName          "P1286834232"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kFire_Attack
@@ -657,7 +657,7 @@ Power Synergist_Assault.Fiery_Assault.Blazing_Bolt
 {
 	Name                 "Blazing_Bolt"                
 	DisplayName          "P2319506449"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kRanged_Attack, kFire_Attack
@@ -814,7 +814,7 @@ Power Synergist_Assault.Fiery_Assault.Enflame_Partner
 {
 	Name                 "Enflame_Partner"              
 	DisplayName          "Enflame Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -894,7 +894,7 @@ Power Synergist_Assault.Fiery_Assault.Blaze
 {
 	Name                 "Blaze"                       
 	DisplayName          "P888934707"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kFire_Attack

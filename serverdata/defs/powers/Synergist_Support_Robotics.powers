@@ -2,7 +2,7 @@ Power Synergist_Support.Robotics.Assault_Bot
 {
 	Name                 "Assault_Bot"                 
 	DisplayName          "P524637202"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -59,7 +59,7 @@ Power Synergist_Support.Robotics.Deflection_Shield
 {
 	Name                 "Deflection_Shield"           
 	DisplayName          "P1823934049"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kToggle
 	Accuracy             1
 	EntsAffected         kFriend, kCaster
@@ -268,7 +268,7 @@ Power Synergist_Support.Robotics.Triage_Beacon
 {
 	Name                 "Triage_Beacon"               
 	DisplayName          "P3860346273"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -323,7 +323,7 @@ Power Synergist_Support.Robotics.Insulation_Shield
 {
 	Name                 "Insulation_Shield"           
 	DisplayName          "P4034787409"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kFriend, kCaster
@@ -700,7 +700,7 @@ Power Synergist_Support.Robotics.Poison_Trap
 {
 	Name                 "Poison_Trap"                 
 	DisplayName          "P1358094474"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -754,7 +754,7 @@ Power Synergist_Support.Robotics.Force_Field_Generator
 {
 	Name                 "Force_Field_Generator"       
 	DisplayName          "P1946739647"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -807,7 +807,7 @@ Power Synergist_Support.Robotics.Repair
 {
 	Name                 "Repair"                      
 	DisplayName          "P2303209751"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kMyPet
@@ -881,7 +881,7 @@ Power Synergist_Support.Robotics.Trip_Mine
 {
 	Name                 "Trip_Mine"                   
 	DisplayName          "P466688635"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kCaster
@@ -935,7 +935,7 @@ Power Synergist_Support.Robotics.Detonator
 {
 	Name                 "Detonator"                   
 	DisplayName          "P3069665139"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	EntsAffected         kMyPet

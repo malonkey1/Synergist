@@ -4,7 +4,7 @@ Power Synergist_Assault.Earth_Assault.Stone_Spears
 {
 	Name                 "Stone_Spears"                
 	DisplayName          "P2131819048"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kLethal_Attack
@@ -137,7 +137,7 @@ Power Synergist_Assault.Earth_Assault.Stone_Mallet
 {
 	Name                 "Stone_Mallet"                
 	DisplayName          "P4118538781"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack
@@ -273,7 +273,7 @@ Power Synergist_Assault.Earth_Assault.Tremor
 {
 	Name                 "Tremor"                      
 	DisplayName          "P3042336983"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kSmashing_Attack
@@ -403,7 +403,7 @@ Power Synergist_Assault.Earth_Assault.Fortify_Partner
 {
 	Name                 "Fortify_Partner"              
 	DisplayName          "Fortify Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -483,7 +483,7 @@ Power Synergist_Assault.Earth_Assault.Hurl_Boulder
 {
 	Name                 "Hurl_Boulder"                
 	DisplayName          "P4042894918"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kSmashing_Attack
@@ -645,7 +645,7 @@ Power Synergist_Assault.Earth_Assault.Heavy_Mallet
 {
 	Name                 "Heavy_Mallet"                
 	DisplayName          "P3310111834"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack
@@ -781,7 +781,7 @@ Power Synergist_Assault.Earth_Assault.Seismic_Smash
 {
 	Name                 "Seismic_Smash"               
 	DisplayName          "P1523181219"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kMelee_Attack, kSmashing_Attack
@@ -986,7 +986,7 @@ Power Synergist_Assault.Earth_Assault.Reinforce_Partner
 {
 	Name                 "Reinforce_Partner"              
 	DisplayName          "Reinforce Partner"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -1066,7 +1066,7 @@ Power Synergist_Assault.Earth_Assault.Fissure
 {
 	Name                 "Fissure"                     
 	DisplayName          "P543125722"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kSmashing_Attack

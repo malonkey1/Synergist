@@ -4,7 +4,7 @@ Power Synergist_Assault.Psionic_Assault.Psionic_Dart
 {
 	Name                 "Psionic_Dart"                
 	DisplayName          "P229302333"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kPsionic_Attack
@@ -108,7 +108,7 @@ Power Synergist_Assault.Psionic_Assault.Mind_Probe
 {
 	Name                 "Mind_Probe"                  
 	DisplayName          "P361216995"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kPsionic_Attack
@@ -233,7 +233,7 @@ Power Synergist_Assault.Psionic_Assault.Telekinetic_Thrust
 {
 	Name                 "Telekinetic_Thrust"          
 	DisplayName          "P1526688896"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kMelee_Attack, kSmashing_Attack, kPsionic_Attack
@@ -410,7 +410,7 @@ Power Synergist_Assault.Psionic_Assault.Commune
 {
 	Name                 "Commune"              
 	DisplayName          "Commune"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -490,7 +490,7 @@ Power Synergist_Assault.Psionic_Assault.Mental_Blast
 {
 	Name                 "Mental_Blast"                
 	DisplayName          "P2292978182"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kRanged_Attack, kPsionic_Attack
@@ -593,7 +593,7 @@ Power Synergist_Assault.Psionic_Assault.Drain_Psyche
 {
 	Name                 "Drain_Psyche"                
 	DisplayName          "P1415646857"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kPsionic_Attack
@@ -766,7 +766,7 @@ Power Synergist_Assault.Psionic_Assault.Psionic_Lance
 {
 	Name                 "Psionic_Lance"               
 	DisplayName          "P2540702184"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1.2
 	AttackTypes          kRanged_Attack, kPsionic_Attack
@@ -921,7 +921,7 @@ Power Synergist_Assault.Psionic_Assault.Enhance_Link
 {
 	Name                 "Enhance_Link"              
 	DisplayName          "Enhance_Link"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
@@ -1001,7 +1001,7 @@ Power Synergist_Assault.Psionic_Assault.Psychic_Shockwave
 {
 	Name                 "Psychic_Shockwave"           
 	DisplayName          "P1011446305"
-	ModesDisallowed      kDisable_All
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
 	Type                 kClick
 	Accuracy             1
 	AttackTypes          kAOE_Attack, kPsionic_Attack
