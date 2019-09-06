@@ -1,0 +1,13 @@
+PowerCategory Synergist_Assault
+{
+	DisplayName "Assault"
+	PowerSets Synergist_Assault.Dark_Assault
+	PowerSets Synergist_Assault.Earth_Assault
+	PowerSets Synergist_Assault.Electricity_Assault
+	PowerSets Synergist_Assault.Energy_Assault
+	PowerSets Synergist_Assault.Fiery_Assault
+	PowerSets Synergist_Assault.Icy_Assault
+	PowerSets Synergist_Assault.Martial_Assault
+	PowerSets Synergist_Assault.Psionic_Assault
+	PowerSets Synergist_Assault.Thorny_Assault
+}

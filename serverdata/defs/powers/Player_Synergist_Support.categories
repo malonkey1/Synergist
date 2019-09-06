@@ -1,0 +1,11 @@
+PowerCategory Synergist_Support
+{
+	DisplayName "Support"
+	PowerSets Synergist_Support.Hellfire_Aura
+	PowerSets Synergist_Support.Natural_Instinct
+	PowerSets Synergist_Support.Nether_Force
+	PowerSets Synergist_Support.Ninjitsu
+	PowerSets Synergist_Support.Robotics
+	PowerSets Synergist_Support.Streetwise
+	PowerSets Synergist_Support.Super_Serum
+}

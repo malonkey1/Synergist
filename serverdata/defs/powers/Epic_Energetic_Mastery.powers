@@ -1,0 +1,994 @@
+Power Epic.Energetic_Mastery.Energy_Transfer
+{
+	Name                 "Energy_Transfer"             
+	DisplayName          "P2674318123"
+	BuyRequires          $archetype @Class_Synergist ==
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1.2
+	AttackTypes          kMelee_Attack, kSmashing_Attack, kEnergy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                7
+	EnduranceCost        19.11
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       2.67
+	RechargeTime         20
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kTaunt_Boost, kStunned_Boost
+	// Additional Power Factors
+	StrengthsDisallowed  kRange
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\BruteMelee_EnergyMelee_EnergyTransfer.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\BruteMelee_EnergyMelee_EnergyTransfer.PFX
+	DisplayShortHelp     "P178226163"
+	DisplayHelp          "P1926201792"
+	IconName             "PrimalForcesMasteryDominator_EnergyTransfer.tga"
+	TimeToConfirm        0
+	DisplayTargetShortHelp "P2848422893"
+	DisplayTargetHelp    "P2366756416"
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.56
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1375087093"
+		DisplayVictimHit     "P135684187"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kEnergy
+		Target               kTarget
+		Scale                3
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1472633057"
+		DisplayVictimHit     "P132682522"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                0.701877083535059
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.000
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1375087093"
+		DisplayVictimHit     "P135684187"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kEnergy
+		Target               kTarget
+		Scale                1.89329810631735
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.000
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1472633057"
+		DisplayVictimHit     "P132682522"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSpecial
+		Target               kSelf
+		Scale                3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0.1
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayVictimHit     "P1840404681"
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                8
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               0.6
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P713892034"
+		DisplayVictimHit     "P3202947871"
+		StackType            kStack
+		ConditionalFX        GenericContinuing/StunContinuing.fx
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                2
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               0.6
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P713892034"
+		DisplayVictimHit     "P3202947871"
+		StackType            kStack
+		ConditionalFX        GenericContinuing/StunContinuing.fx
+		Requires             enttype target> player eq
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
+}
+
+Power Epic.Energetic_Mastery.Focused_Accuracy
+{
+	Name                 "Focused_Accuracy"            
+	DisplayName          "P4148086331"
+	BuyRequires          $archetype @Class_Synergist ==
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kToggle
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0.39
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       1.17
+	RechargeTime         10
+	ActivatePeriod       0.5
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kEnduranceDiscount_Boost, kRecharge_Boost, kBuff_ToHit_Boost
+	// Additional Power Factors
+	ToggleIgnoreHold     kTrue
+	ToggleIgnoreSleep    kTrue
+	ToggleIgnoreStun     kTrue
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Epic_BodyMastery_FocusedAccuracy.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\Epic_BodyMastery_FocusedAccuracy.pfx
+	DisplayShortHelp     "P2378869502"
+	DisplayHelp          "P1756401964"
+	DisplayAttackerHit   "P2534745051"
+	IconName             "EnergyMastery_FocusedAccuracy.tga"
+	TimeToConfirm        0
+
+	AttribMod
+	{
+		Name                 "Buff_ToHit"                  
+		Table                "Melee_Buff_ToHit"            
+		Aspect               kCur
+		Attrib               kToHit
+		Target               kTargetsOwnerAndAllPets
+		Scale                0.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kTrue
+		StackType            kReplace
+		ContinuingFX         GenericContinuing\BuffToHitCont.fx
+		CancelEvents         Held, Stunned, Sleep
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kToHit
+		Target               kTargetsOwnerAndAllPets
+		Scale                2
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kStr
+		Attrib               kAccuracy
+		Target               kTargetsOwnerAndAllPets
+		Scale                0.2
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kTrue
+		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kPerceptionRadius
+		Target               kSelf
+		Scale                0.6
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kPerceptionRadius
+		Target               kSelf
+		Scale                0.6
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
+	}
+}
+
+Power Epic.Energetic_Mastery.Physical_Perfection
+{
+	Name                 "Physical_Perfection"         
+	DisplayName          "P4283015705"
+	BuyRequires          Epic.Energetic_Mastery.Energy_Transfer Epic.Energetic_Mastery.Focused_Accuracy ||
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0
+	RechargeTime         0
+	ActivatePeriod       10
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kHeal_Boost, kRecovery_Boost
+	DisplayShortHelp     "P3673645694"
+	DisplayHelp          "P3240916997"
+	IconName             "EnergyMastery_PhysicalPerfection.tga"
+	TimeToConfirm        0
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kRegeneration
+		Target               kTargetsOwnerAndAllPets
+		Scale                0.2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             10.25
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kRecovery
+		Target               kTargetsOwnerAndAllPets
+		Scale                0.125
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             10.25
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+}
+
+Power Epic.Energetic_Mastery.Conserve_Power
+{
+	Name                 "Conserve_Power"              
+	DisplayName          "P2460757215"
+	BuyRequires          Epic.Energetic_Mastery.Energy_Transfer Epic.Energetic_Mastery.Focused_Accuracy ||
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        9.75
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       1.17
+	RechargeTime         600
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kEnduranceDiscount_Boost, kRecharge_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\TankerDefense_ElectricArmor_ConservePower.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\TankerDefense_ElectricArmor_ConservePower.PFX
+	DisplayShortHelp     "P2089016955"
+	DisplayHelp          "P407995659"
+	IconName             "PrimalForcesMastery_ConservePower.tga"
+	TimeToConfirm        0
+	Cancelable           kTrue
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kEnduranceDiscount
+		Target               kTargetsOwnerAndAllPets
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1134376642"
+		StackType            kStack
+		ContinuingFX         GenericContinuing\BuffEndContinuing.fx
+	}
+}
+
+Power Epic.Energetic_Mastery.Power_Boost
+{
+	Name                 "Power_Boost"                 
+	DisplayName          "P314575027"
+	BuyRequires          Epic.Energetic_Mastery.Energy_Transfer Epic.Energetic_Mastery.Focused_Accuracy &&  Epic.Energetic_Mastery.Energy_Transfer Epic.Energetic_Mastery.Physical_Perfection && || Epic.Energetic_Mastery.Focused_Accuracy Epic.Energetic_Mastery.Physical_Perfection && || Epic.Energetic_Mastery.Energy_Transfer Epic.Energetic_Mastery.Focused_Accuracy && || Epic.Energetic_Mastery.Energy_Transfer Epic.Energetic_Mastery.Conserve_Power && || Epic.Energetic_Mastery.Focused_Accuracy Epic.Energetic_Mastery.Conserve_Power && ||
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        9.75
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       1.17
+	RechargeTime         120
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kEnduranceDiscount_Boost, kRecharge_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\BlasterSupport_EnergyManipulation_PowerBoost.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\BlasterSupport_EnergyManipulation_PowerBoost.PFX
+	DisplayShortHelp     "P3047510863"
+	DisplayHelp          "P2180797481"
+	IconName             "PrimalForcesMastery_PowerBoost.tga"
+	TimeToConfirm        0
+	Cancelable           kTrue
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kStun
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3834136190"
+		StackType            kReplace
+		ContinuingFX         Powers\Ability\PowerBoostContinuing.fx
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kSleep
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kConfused
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kTerrorized
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kImmobilize
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kHeld
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kRunSpeed
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kFlySpeed
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kDefense
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kMelee_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kRanged_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kAOE_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kSmashing_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kLethal_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kFire_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kCold_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kEnergy_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kNegative_Energy_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kPsionic_Attack
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kHeal
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kAbsorb
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kToHit
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kStr
+		Attrib               kEndurance
+		Target               kSelf
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+}

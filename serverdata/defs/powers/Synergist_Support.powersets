@@ -1,0 +1,573 @@
+PowerSet Synergist_Support.Hellfire_Aura
+{
+	Name             "Hellfire_Aura"
+	DisplayName      "Hellfire Aura"
+	DisplayShortHelp "Harness the power of demons to protect yourself."
+	DisplayHelp      "You can control the forces of Hell to create a protective barrier around yourself, and have bound a demon to your service. This powerset has very strong resistance to fire damage, and also has a high offensive potential."
+	IconName         "Demon_Summoning_set.ico"
+
+	Powers Synergist_Support.Hellfire_Aura.Summon_Demons
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Fire_Shield
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Healing_Flames
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Plasma_Shield
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Forge
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Thaw
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Hell_On_Earth
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Fiery_Embrace
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Hellfire_Aura.Infernal_Revival
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Support.Natural_Instinct
+{
+	Name             "Natural_Instinct"
+	DisplayName      "Natural Instinct"
+	DisplayShortHelp "You can control the forces of nature to heal and protect."
+	DisplayHelp      "You have linked yourself to nature, granting you that ability to bend it to your will. You can use this force to heal yourself and allies. Some powers in this set provide Bloom, which augments your healing abilities."
+	IconName         "Nature_Affinity_set.ico"
+
+	Powers Synergist_Support.Natural_Instinct.Summon_Dire_Wolf
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Reconstruction
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Wild_Growth
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Integration
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Lifegiving_Spores
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Wild_Bastion
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Instant_Healing
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Revive
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Natural_Instinct.Moment_Of_Glory
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Support.Nether_Force
+{
+	Name             "Nether_Force"
+	DisplayName      "Nether Force"
+	DisplayShortHelp "Use the forces of the Netherworld to protect and defend."
+	DisplayHelp      "You have become connected to a powerful being of the Netherworld known as a Lich, who has granted you access to the Netherworld's protective energy in exchange for anchoring it to our plane."
+	IconName         "Dark_Armor_set.ico"
+
+	Powers Synergist_Support.Nether_Force.Lich
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Dark_Embrace
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Murky_Cloud
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Twilight_Grasp
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Obsidian_Shield
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Fearsome_Stare
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Cloak_of_Darkness
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Oppressive_Gloom
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Nether_Force.Soul_Transfer
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Support.Ninjitsu
+{
+	Name             "Ninjitsu"
+	DisplayName      "P2546782405"
+	DisplayShortHelp "P2546782405"
+	DisplayHelp      "P1848136070"
+	IconName         "Ninjitsu_set.ico"
+
+	Powers Synergist_Support.Ninjitsu.Call_Jounin
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Ninja_Reflexes
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Danger_Sense
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Caltrops
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Kuji-In_Rin
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Kuji-In_Sha
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Smoke_Flash
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Blinding_Powder
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Ninjitsu.Kuji-In_Retsu
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Support.Robotics
+{
+	Name             "Robotics"
+	DisplayName      "P1963361941"
+	DisplayShortHelp "P1963361941"
+	DisplayHelp      "P193529645"
+	IconName         "Robotics_set.ico"
+
+	Powers Synergist_Support.Robotics.Assault_Bot
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Deflection_Shield
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Triage_Beacon
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Insulation_Shield
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Poison_Trap
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Force_Field_Generator
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Repair
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Trip_Mine
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Robotics.Detonator
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Support.Streetwise
+{
+	Name             "Streetwise"
+	DisplayName      "Streetwise"
+	DisplayShortHelp "Use your charisma and sheer grit to lead your allies to victory."
+	DisplayHelp      "Your charisma and determination allow you to push your allies forward and have attracted the loyalty of a Bruiser. This powerset is an all-around effective set with strong group buffs."
+	IconName         "Willpower_set.ico"
+
+	Powers Synergist_Support.Streetwise.Call_Bruiser
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Mind_Over_Body
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Fast_Healing
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Indomitable_Will
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Rally
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Rise_to_the_Challenge
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Gang_War
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Resurgence
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Streetwise.Strength_of_Will
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Support.Super_Serum
+{
+	Name             "Super_Serum"
+	DisplayName      "Super Serum"
+	DisplayShortHelp "You have developed some kind of serum that grants you superior durability."
+	DisplayHelp      "You have created a super serum that has grant you and a fellow beneficiary of the serum extreme durability and a defensive aura. This set has high resistance to most damage types, as well as potent offensive debuffs."
+	IconName         "Mercenaries_set.ico"
+
+	Powers Synergist_Support.Super_Serum.Commando
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Temp_Invulnerability
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Weaken
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Resist_Elements
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Antidote
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Resist_Energies
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Elixir_of_Life
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Invincibility
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Super_Serum.Serum
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}

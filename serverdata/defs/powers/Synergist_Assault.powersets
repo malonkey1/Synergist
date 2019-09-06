@@ -1,0 +1,739 @@
+PowerSet Synergist_Assault.Dark_Assault
+{
+	Name             "Dark_Assault"
+	DisplayName      "P2452495228"
+	DisplayShortHelp "P2452495228"
+	DisplayHelp      "P3405842258"
+	SetAccountRequires	"ctpsdaas ProductOwned?"
+	SetAccountTooltip	"P3430045325"
+	SetAccountProduct	ctpsdaas
+	IconName         "Dark_Assault_set.ico"
+
+	Powers Synergist_Assault.Dark_Assault.Dark_Blast
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Smite
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Gloom
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Imbue_Shadows
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Night_Fall
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Life_Drain
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Moon_Beam
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Imbue_Darkness
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Dark_Assault.Midnight_Grasp
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Assault.Earth_Assault
+{
+	Name             "Earth_Assault"
+	DisplayName      "P3308845961"
+	DisplayShortHelp "P3308845961"
+	DisplayHelp      "P3785502882"
+	IconName         "Earth_Assault_set.ico"
+
+	Powers Synergist_Assault.Earth_Assault.Stone_Spears
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Stone_Mallet
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Tremor
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Fortify_Partner
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Hurl_Boulder
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Heavy_Mallet
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Seismic_Smash
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Reinforce_Partner
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Earth_Assault.Fissure
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Assault.Electricity_Assault
+{
+	Name             "Electricity_Assault"
+	DisplayName      "P2072287056"
+	DisplayShortHelp "P2072287056"
+	DisplayHelp      "P2385265246"
+	IconName         "Electricity_Assault_set.ico"
+
+	Powers Synergist_Assault.Electricity_Assault.Charged_Bolts
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Charged_Brawl
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Lightning_Bolt
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Charge_Partner
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Havok_Punch
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Zapp
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Static_Discharge
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Electrify_Partner
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Electricity_Assault.Voltaic_Sentinel
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Assault.Energy_Assault
+{
+	Name             "Energy_Assault"
+	DisplayName      "P4269735584"
+	DisplayShortHelp "P4269735584"
+	DisplayHelp      "P2825969618"
+	IconName         "Energy_Assault_set.ico"
+
+	Powers Synergist_Assault.Energy_Assault.Power_Bolt
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Bone_Smasher
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Power_Push
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Energize_Partner
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Power_Blast
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Total_Focus
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Sniper_Blast
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Overload_Partner
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Energy_Assault.Power_Burst
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+
+PowerSet Synergist_Assault.Fiery_Assault
+{
+	Name             "Fiery_Assault"
+	DisplayName      "P1335236228"
+	DisplayShortHelp "P1335236228"
+	DisplayHelp      "P2846008843"
+	IconName         "Fiery_Assault_set.ico"
+
+	Powers Synergist_Assault.Fiery_Assault.Flares
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Incinerate
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Fire_Breath
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Ignite_Partner
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Fire_Blast
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Combustion
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Blazing_Bolt
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Enflame_Partner
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Fiery_Assault.Blaze
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Synergist_Assault.Icy_Assault
+{
+	Name             "Icy_Assault"
+	DisplayName      "P3340504771"
+	DisplayShortHelp "P3340504771"
+	DisplayHelp      "P457729377"
+	IconName         "Icy_Assault_set.ico"
+
+	Powers Synergist_Assault.Icy_Assault.Ice_Bolt
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Ice_Sword
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Ice_Sword_Circle
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Chill_Partner
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Ice_Blast
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Frost_Breath
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Greater_Ice_Sword
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Cryolize_Partner
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Icy_Assault.Bitter_Ice_Blast
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Synergist_Assault.Martial_Assault
+{
+	Name             "Martial_Assault"
+	DisplayName      "P3317035126"
+	DisplayShortHelp "P3317035126"
+	DisplayHelp      "P2622142057"
+	SetAccountRequires	"ctpsmaas ProductOwned?"
+	SetAccountTooltip	"P4195028871"
+	SetAccountProduct	ctpsmaas
+	IconName         "Martial_Assault_set.ico"
+
+	Powers Synergist_Assault.Martial_Assault.Shuriken_Throw
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Thunder_Kick
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Trick_Shot
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Train_Partner
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Spinning_Kick
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Dragons_Tail
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Masterful_Throw
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Complete_Training
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Martial_Assault.Explosive_Shuriken
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Synergist_Assault.Psionic_Assault
+{
+	Name             "Psionic_Assault"
+	DisplayName      "P823406553"
+	DisplayShortHelp "P823406553"
+	DisplayHelp      "P3896764768"
+	IconName         "Psionic_Assault_set.ico"
+
+	Powers Synergist_Assault.Psionic_Assault.Psionic_Dart
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Mind_Probe
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Telekinetic_Thrust
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Commune
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Mental_Blast
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Drain_Psyche
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Psionic_Lance
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Enhance_Link
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Psionic_Assault.Psychic_Shockwave
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Synergist_Assault.Thorny_Assault
+{
+	Name             "Thorny_Assault"
+	DisplayName      "P3003400140"
+	DisplayShortHelp "P3003400140"
+	DisplayHelp      "P3719123220"
+	IconName         "Thorny_Assault_set.ico"
+
+	Powers Synergist_Assault.Thorny_Assault.Thorny_Darts
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Skewer
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Fling_Thorns
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Seed_Partner
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Impale
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Thorn_Burst
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Ripper
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Cultivate_Partner
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Assault.Thorny_Assault.Thorn_Barrage
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}

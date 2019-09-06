@@ -1,0 +1,335 @@
+Power Villain_Pets.Synergist_WeaponMastery_Snipe.LRM_Rocket_Normal
+{
+	Name                 "LRM_Rocket_Normal"                  
+	DisplayName          "P1046091651"
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1.05
+	AttackTypes          kRanged_Attack, kLethal_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                150
+	EnduranceCost        22.75
+	IdeaCost             0
+	TravelSuppression    4
+	InterruptTime        4
+	TimeToActivate       5.87
+	RechargeTime         240
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               20
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kKnockback_Boost, kInterrupt_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Epic_MunitionsMastery_LRMRocket.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\Epic_MunitionsMastery_LRMRocket.pfx
+	DisplayShortHelp     "P2849632121"
+	DisplayHelp          "P2782625514"
+	IconName             "MunitionsMastery_LRMRocket.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        16
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.49
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1477903860"
+		DisplayVictimHit     "P1255338216"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2540810008"
+		DisplayVictimHit     "P3167872531"
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                0.74
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Knockback"                   
+		Table                "Ranged_Knockback"            
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.7
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.50
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Knockback"                   
+		Table                "Ranged_Knockback"            
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.7
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.50
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> player eq
+		Suppress             Knocked 10 WhenInactive
+	}
+}
+
+Power Villain_Pets.Synergist_WeaponMastery_Snipe.LRM_Rocket_Quick
+{
+	Name                 "LRM_Rocket_Quick"                  
+	DisplayName          "P1046091651"
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1.05
+	AttackTypes          kRanged_Attack, kLethal_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                150
+	EnduranceCost        22.75
+	IdeaCost             0
+	TravelSuppression    4
+	InterruptTime        0
+	TimeToActivate       1.87
+	RechargeTime         240
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               20
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kKnockback_Boost, kInterrupt_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Epic_MunitionsMastery_LRMRocket.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\Epic_MunitionsMastery_LRMRocket.pfx
+	DisplayShortHelp     "P2849632121"
+	DisplayHelp          "P2782625514"
+	IconName             "MunitionsMastery_LRMRocket.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        16
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.49
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1477903860"
+		DisplayVictimHit     "P1255338216"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2540810008"
+		DisplayVictimHit     "P3167872531"
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                0.74
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Knockback"                   
+		Table                "Ranged_Knockback"            
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.7
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.50
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Knockback"                   
+		Table                "Ranged_Knockback"            
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.7
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.50
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> player eq
+		Suppress             Knocked 10 WhenInactive
+	}
+}

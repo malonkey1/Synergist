@@ -1,0 +1,1078 @@
+Power Synergist_Assault.Martial_Assault.Shuriken_Throw
+{
+	Name                 "Shuriken_Throw"              
+	DisplayName          "P991737560"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kRanged_Attack, kLethal_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                80
+	EnduranceCost        6.5
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       1
+	RechargeTime         4
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kRange_Boost, kRecharge_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_ShurikenThrow.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_ShurikenThrow.pfx
+	DisplayShortHelp     "P1884795216"
+	DisplayHelp          "P1390121031"
+	IconName             "MartialAssault_ShurikenThrow.tga"
+	TimeToConfirm        0
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2612199756"
+		DisplayVictimHit     "P3862632471"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                0.784
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2612199756"
+		DisplayVictimHit     "P3862632471"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Thunder_Kick
+{
+	Name                 "Thunder_Kick"                
+	DisplayName          "P3218679137"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1.05
+	AttackTypes          kMelee_Attack, kSmashing_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                7
+	EnduranceCost        6.864
+	IdeaCost             0
+	TravelSuppression    1
+	InterruptTime        0
+	TimeToActivate       0.83
+	RechargeTime         6
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kStunned_Boost
+	// Additional Power Factors
+	StrengthsDisallowed  kRange
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_ThunderKick.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_ThunderKick.pfx
+	DisplayShortHelp     "P1559765790"
+	DisplayHelp          "P23263651"
+	IconName             "MartialAssault_ThunderKick.tga"
+	TimeToConfirm        0
+	DisplayTargetShortHelp "P2848422893"
+	DisplayTargetHelp    "P2366756416"
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.32
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3109450281"
+		DisplayVictimHit     "P3113393502"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Melee_Stun"                  
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                6
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            2
+		Period               0
+		Chance               0.1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2160290682"
+		DisplayVictimHit     "P4062395835"
+		StackType            kStack
+		ConditionalFX        GenericContinuing/StunContinuing.fx
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                4
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            2
+		Period               0
+		Chance               0.1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2160290682"
+		DisplayVictimHit     "P4062395835"
+		StackType            kStack
+		ConditionalFX        GenericContinuing/StunContinuing.fx
+		Requires             enttype target> player eq
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.54821351998119
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.000
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3109450281"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Trick_Shot
+{
+	Name                 "Trick_Shot"                  
+	DisplayName          "P1901682939"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kMelee_Attack, kSmashing_Attack, kEnergy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                70
+	EnduranceCost        10.192
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       1.07
+	RechargeTime         10
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
+	// Additional Power Factors
+	StrengthsDisallowed  kRange
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_TrickShot.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_TrickShot.pfx
+	DisplayShortHelp     "P1616644656"
+	DisplayHelp          "P1362532458"
+	IconName             "MartialAssault_TrickShot.tga"
+	TimeToConfirm        0
+	DisplayTargetHelp    "P3371105139"
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.4
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P860170444"
+		DisplayVictimHit     "P1083611728"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.96411363018088
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.000
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P860170444"
+		DisplayVictimHit     "P1083611728"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kNull
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             2
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ContinuingFX         PFX
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEntCreate
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             1
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		EntityDef            Pets_Trick_Shot_Jump1
+		PriorityList         PL_Untargetable_FightPreferRanged
+		// Additional Power Attribs
+		KeepThroughDeath     kTrue
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kSetMode
+		Target               kTarget
+		Scale                1
+		Type                 kConstant
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             4
+		Magnitude            kChain_Induction
+		Period               4.3
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		AllowCombatMods      kFalse
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Train_Partner
+{
+	Name                 "Train_Partner"              
+	DisplayName          "Train Partner"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AIGroups             kMastermindUpgrade1
+	EntsAffected         kMyPet
+	EntsAutoHit          kMyPet
+	Target               kMyPet
+	Range                50
+	EnduranceCost        22.75
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0.83
+	RechargeTime         6
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               30
+	Arc                  0
+	TargetNearGround     kTrue
+	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_ThunderKick.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_ThunderKick.pfx
+	DisplayShortHelp     "P1852059004"
+	DisplayHelp          "P2551597979"
+	DisplayAttackerHit   "P445682185"
+	IconName             "MartialAssault_EnvenomedBlades.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        16
+	AnimMainTargetOnly   kTrue
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		Requires             group target> MastermindPets eq
+		Reward               Synergist_Assault.Martial_Assault.Shuriken_Throw
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		Requires             group target> MastermindPets eq
+		Reward               Synergist_Assault.Martial_Assault.Thunder_Kick
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Spinning_Kick
+{
+	Name                 "Spinning_Kick"               
+	DisplayName          "P2966841704"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1.05
+	AttackTypes          kMelee_Attack, kSmashing_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kCaster
+	Range                8
+	EnduranceCost        8.528
+	IdeaCost             0
+	TravelSuppression    2
+	InterruptTime        0
+	TimeToActivate       1.07
+	RechargeTime         8
+	ActivatePeriod       0
+	EffectArea           kCone
+	Radius               8
+	Arc                  60
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kKnockback_Boost, kRecharge_Boost
+	// Additional Power Factors
+	StrengthsDisallowed  kRange
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_SpinningKick.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_SpinningKick.pfx
+	DisplayShortHelp     "P226651437"
+	DisplayHelp          "P3823255180"
+	IconName             "MartialAssault_SpinningKick.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        16
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.4
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P860170444"
+		DisplayVictimHit     "P383563669"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.6
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P4243055354"
+		DisplayVictimHit     "P2549913424"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.66
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.6
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P4243055354"
+		DisplayVictimHit     "P2549913424"
+		StackType            kStack
+		Requires             enttype target> player eq
+		Suppress             Knocked 10 WhenInactive
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.86267457891267
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.000
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P860170444"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Dragons_Tail
+{
+	Name                 "Dragons_Tail"                
+	DisplayName          "P3855064031"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1.05
+	AttackTypes          kMelee_Attack, kSmashing_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kCaster
+	Range                0
+	EnduranceCost        18.512
+	IdeaCost             0
+	TravelSuppression    1
+	InterruptTime        0
+	TimeToActivate       1.5
+	RechargeTime         20
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               15
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kKnockback_Boost
+	// Additional Power Factors
+	StrengthsDisallowed  kRange
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_DragonTail.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_DragonTail.pfx
+	DisplayShortHelp     "P596322262"
+	DisplayHelp          "P1010313408"
+	IconName             "MartialManipulation_DragonsTail.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        10
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3138779212"
+		DisplayVictimHit     "P1923029591"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.67
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.75
+		NearGround           kTrue
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                0.67
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               0.75
+		NearGround           kTrue
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             enttype target> player eq
+		Suppress             Knocked 10 WhenInactive
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                2.85297331691865
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.000
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3138779212"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Masterful_Throw
+{
+	Name                 "Masterful_Throw"             
+	DisplayName          "P3417996420"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1.2
+	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                175
+	EnduranceCost        18.512
+	IdeaCost             0
+	TravelSuppression    1
+	InterruptTime        3
+	TimeToActivate       4
+	RechargeTime         20
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDebuff_ToHit_Boost, kInterrupt_Boost
+	// Additional Power Factors
+	PowerRedirector      kTrue
+	HighlightEval        cur.kToHit char> .97 >=
+	HighlightRing        255 255 0 255
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_MasterfulThrow.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_MasterfulThrow.PFX
+	DisplayShortHelp     "P548695264"
+	DisplayHelp          "P1632899237"
+	IconName             "MartialAssault_MasterfulThrow.tga"
+	TimeToConfirm        0
+	DisplayTargetShortHelp "P2190949330"
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                3.56
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P617718717"
+		DisplayVictimHit     "P3454687990"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                4.62
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P617718717"
+		DisplayVictimHit     "P3454687990"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kLethal
+		Target               kTarget
+		Scale                0.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             10
+		Magnitude            1
+		Period               2
+		Chance               0.80
+		NearGround           kFalse
+		CancelOnMiss         kTrue
+		DisplayAttackerHit   "P1911694447"
+		DisplayVictimHit     "P128165973"
+		StackType            kStack
+		ContinuingFX         PFX
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kPowerRedirect
+		Target               kTarget
+		Scale                1
+		Type                 kConstant
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             cur.kToHit source> .97 >=
+		// Additional Power Attribs
+		PrimaryStringList    Villain_Pets.Dominator_MartialAssault_Snipe.Masterful_Throw_Quick
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kPowerRedirect
+		Target               kTarget
+		Scale                1
+		Type                 kConstant
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             1
+		// Additional Power Attribs
+		PrimaryStringList    Villain_Pets.Dominator_MartialAssault_Snipe.Masterful_Throw_Normal
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Complete_Training
+{
+	Name                 "Complete_Training"              
+	DisplayName          "Complete Training"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AIGroups             kMastermindUpgrade1
+	EntsAffected         kMyPet
+	EntsAutoHit          kMyPet
+	Target               kMyPet
+	Range                50
+	EnduranceCost        22.75
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       1.5
+	RechargeTime         6
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               30
+	Arc                  0
+	TargetNearGround     kTrue
+	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_DragonTail.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_DragonTail.pfx
+	DisplayShortHelp     "P1852059004"
+	DisplayHelp          "P2551597979"
+	DisplayAttackerHit   "P445682185"
+	IconName             "MartialAssault_EnvenomedBlades.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        16
+	AnimMainTargetOnly   kTrue
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		Requires             group target> MastermindPets eq
+		Reward               Synergist_Assault.Martial_Assault.Spinning_Kick
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		Requires             group target> MastermindPets eq
+		Reward               Synergist_Assault.Martial_Assault.Dragons_Tail
+	}
+}
+
+Power Synergist_Assault.Martial_Assault.Explosive_Shuriken
+{
+	Name                 "Explosive_Shuriken"          
+	DisplayName          "P2740993693"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kAoE_Attack, kLethal_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                80
+	EnduranceCost        18.98
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       1.67
+	RechargeTime         12
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               10
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kRange_Boost, kRecharge_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MartialAssault_ExplosiveShuriken.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\MartialAssault_ExplosiveShuriken.pfx
+	DisplayShortHelp     "P1823000831"
+	DisplayHelp          "P809361"
+	IconName             "MartialAssault_ExplosiveShuriken.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        10
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kFire
+		Target               kTarget
+		Scale                2.28
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3237615503"
+		DisplayVictimHit     "P2759637154"
+		StackType            kStack
+		Requires             enttype target> critter eq
+		RadiusInner          0
+		RadiusOuter          0
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kFire
+		Target               kTarget
+		Scale                1.232
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2612199756"
+		DisplayVictimHit     "P3862632471"
+		StackType            kStack
+		Requires             enttype target> player eq
+		RadiusInner          0
+		RadiusOuter          0
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kFire
+		Target               kTarget
+		Scale                0.05
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0.2
+		Duration             5.5
+		Magnitude            1
+		Period               1
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kTrue
+		DisplayAttackerHit   "P951417841"
+		DisplayVictimHit     "P2193804556"
+		StackType            kStack
+		Requires             enttype target> critter eq
+		// Additional Power Attribs
+		BoostTemplate        kTrue
+		RadiusInner          0
+		RadiusOuter          10
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kFire
+		Target               kTarget
+		Scale                0.05
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0.2
+		Duration             5.5
+		Magnitude            1
+		Period               1
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kTrue
+		DisplayAttackerHit   "P951417841"
+		DisplayVictimHit     "P2193804556"
+		StackType            kStack
+		Requires             enttype target> player eq
+		// Additional Power Attribs
+		BoostTemplate        kTrue
+		RadiusInner          0
+		RadiusOuter          10
+	}
+}

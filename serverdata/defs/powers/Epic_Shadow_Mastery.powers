@@ -1,0 +1,980 @@
+Power Epic.Shadow_Mastery.Living_Shadows
+{
+	Name                 "Living_Shadows"              
+	DisplayName          "P3511745250"
+	BuyRequires          $archetype @Class_Synergist ==
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kAOE_Attack, kNegative_Energy_Attack, kSmashing_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                60
+	EnduranceCost        13
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       1.67
+	RechargeTime         8
+	ActivatePeriod       0
+	EffectArea           kCone
+	Radius               60
+	Arc                  60
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kImmobilized_Boost, kRange_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_LivingShadows.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_LivingShadows.PFX
+	DisplayShortHelp     "P420247998"
+	DisplayHelp          "P1058106044"
+	IconName             "DarknessControl_LivingShadows.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        16
+	DisplayTargetShortHelp "P3411616425"
+	DisplayTargetHelp    "P1111096912"
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                0.13
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                1
+		Duration             5.2
+		Magnitude            1
+		Period               2
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1513428947"
+		DisplayVictimHit     "P3534711131"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                0.298016677935542
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                1
+		Duration             5.2
+		Magnitude            1
+		Period               2
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1513428947"
+		DisplayVictimHit     "P3534711131"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "DeBuff_ToHit"                
+		Table                "Ranged_DeBuff_ToHit"         
+		Aspect               kCur
+		Attrib               kToHit
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             8
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ContinuingFX         PFX
+	}
+
+	AttribMod
+	{
+		Name                 "Immobilize"                  
+		Table                "Ranged_Immobilize"           
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                15
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P362106426"
+		DisplayVictimHit     "P2175482535"
+		StackType            kStack
+		ConditionalFX        PFX
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                4
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P362106426"
+		DisplayVictimHit     "P2175482535"
+		StackType            kStack
+		ConditionalFX        PFX
+		Requires             enttype target> player eq
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kRes
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kRes
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kFly
+		Target               kTarget
+		Scale                -1.6
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+}
+
+Power Epic.Shadow_Mastery.Petrifying_Gaze
+{
+	Name                 "Petrifying_Gaze"             
+	DisplayName          "P799801114"
+	BuyRequires          $archetype @Class_Synergist ==
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                50
+	EnduranceCost        9.75
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       1.67
+	RechargeTime         32
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kHold_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\DefenderBuff_DarkMiasma_PetrifyingGaze.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\DefenderBuff_DarkMiasma_PetrifyingGaze.PFX
+	DisplayShortHelp     "P778647036"
+	DisplayHelp          "P2575616074"
+	DisplayAttackerHit   "P1859285232"
+	IconName             "DarknessMastery_PetrifyingGaze.tga"
+	TimeToConfirm        0
+	DisplayTargetShortHelp "P3220742713"
+	DisplayTargetHelp    "P235131821"
+
+	AttribMod
+	{
+		Name                 "Immobilize"                  
+		Table                "Ranged_Immobilize"           
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                8
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ConditionalBits      ANIM_LASSOSTUN, ANIM_STRONG
+		ConditionalFX        PFX
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                2
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ConditionalBits      ANIM_LASSOSTUN, ANIM_STRONG
+		ConditionalFX        PFX
+		Requires             enttype target> player eq
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
+}
+
+Power Epic.Shadow_Mastery.Dark_Consumption
+{
+	Name                 "Dark_Consumption"            
+	DisplayName          "P3604985100"
+	BuyRequires          Epic.Shadow_Mastery.Living_Shadows Epic.Shadow_Mastery.Petrifying_Gaze ||
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kAOE_Attack, kNegative_Energy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kCaster
+	Range                0
+	EnduranceCost        0.65
+	IdeaCost             0
+	TravelSuppression    1
+	InterruptTime        0
+	TimeToActivate       1.03
+	RechargeTime         360
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               8
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kRecovery_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ScrapperMelee_DarkMelee_DarkConsumption.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ScrapperMelee_DarkMelee_DarkConsumption.PFX
+	DisplayShortHelp     "P3664607997"
+	DisplayHelp          "P670170653"
+	IconName             "ShadowFighting_DarkConsumption.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        10
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1697401567"
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kEndurance
+		Target               kSelf
+		Scale                25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0.25
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+}
+
+Power Epic.Shadow_Mastery.Haunt
+{
+	Name                 "Haunt"                       
+	DisplayName          "P3541511492"
+	BuyRequires          Epic.Shadow_Mastery.Living_Shadows Epic.Shadow_Mastery.Petrifying_Gaze ||
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kFoe
+	EntsAutoHit          kFoe
+	Target               kFoe
+	Range                80
+	EnduranceCost        10.4
+	IdeaCost             0
+	TravelSuppression    4
+	InterruptTime        0
+	TimeToActivate       2.33
+	RechargeTime         210
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRange_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kFear_Boost, kDebuff_ToHit_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_Haunt.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_Haunt.PFX
+	DisplayShortHelp     "P3340232153"
+	DisplayHelp          "P2816566842"
+	IconName             "DarknessControl_Haunt.tga"
+	TimeToConfirm        0
+	Cancelable           kTrue
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEntCreate
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		EntityDef            Pets_Shade
+		PriorityList         PL_FightPreferMelee
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEntCreate
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		EntityDef            Pets_Shade
+		PriorityList         PL_FightPreferMelee
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             1
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Reward               Temporary_Powers.Temporary_Powers.Haunted
+	}
+}
+
+Power Epic.Shadow_Mastery.Soul_Drain
+{
+	Name                 "Soul_Drain"                  
+	DisplayName          "P2786855971"
+	BuyRequires          Epic.Shadow_Mastery.Living_Shadows Epic.Shadow_Mastery.Petrifying_Gaze && Epic.Shadow_Mastery.Living_Shadows Epic.Shadow_Mastery.Dark_Consumption && || Epic.Shadow_Mastery.Living_Shadows Epic.Shadow_Mastery.Haunt && || Epic.Shadow_Mastery.Petrifying_Gaze Epic.Shadow_Mastery.Haunt && || Epic.Shadow_Mastery.Petrifying_Gaze Epic.Shadow_Mastery.Dark_Consumption && ||
+	ModesDisallowed      kDisable_All, kDisable_Pool, kDisable_Epic
+	Type                 kClick
+	Accuracy             1.2
+	AttackTypes          kAOE_Attack, kNegative_Energy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kCaster
+	Range                0
+	EnduranceCost        19.5
+	IdeaCost             0
+	TravelSuppression    1
+	InterruptTime        0
+	TimeToActivate       2.37
+	RechargeTime         120
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               15
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kBuff_ToHit_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ScrapperMelee_DarkMelee_SoulDrain.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ScrapperMelee_DarkMelee_SoulDrain.PFX
+	DisplayShortHelp     "P4285314984"
+	DisplayHelp          "P1326297254"
+	IconName             "ShadowFighting_StealPower.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        10
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2439648564"
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_ToHit"                  
+		Table                "Melee_Buff_ToHit"            
+		Aspect               kCur
+		Attrib               kToHit
+		Target               kCastersOwnerAndAllPets
+		Scale                0.2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ContinuingFX         PFX
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kSmashing
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kLethal
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kFire
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kCold
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kEnergy
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               knegative_Energy
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kToxic
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kPsionic
+		Target               kCastersOwnerAndAllPets
+		Scale                0.8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_ToHit"                  
+		Table                "Melee_Buff_ToHit"            
+		Aspect               kCur
+		Attrib               kToHit
+		Target               kCastersOwnerAndAllPets
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kSmashing
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kLethal
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kFire
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kCold
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kEnergy
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               knegative_Energy
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kToxic
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Dmg"                    
+		Table                "Melee_Buff_Dmg"              
+		Aspect               kStr
+		Attrib               kPsionic
+		Target               kCastersOwnerAndAllPets
+		Scale                4
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+}
