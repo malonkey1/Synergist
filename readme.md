@@ -12,7 +12,8 @@ Basically, it's a newly made Archetype for City of heroes. It has:
   - **TODO**: Learn how to make new pets so we aren't as limited to Mastermind pets for the powersets.
 
   - **TODO**: Adding a T9 "Merge" power to each set. Will do this once we figure out exactly how to work that. Probably should look at Kheldian forms.
-
+    - Current intended implementation is that it will be a toggle that shuts itself off after X amount of time, provides a big version of the type of mitigation the rest of the set offers, and grants a small set of temp powers that are revoked when the power ends.
+    - These temp powers will be considerably stronger to offset that they can't be enhanced.
 - Inherent: As of right now, it's Partnership, which provides a +ToHit and +DMG to both pet and master while they are withing bodyguarding distance
 
 # SETUP:
@@ -51,6 +52,8 @@ To set this up on your own server, you need to be set up for binning as explaine
   - After you bin, if you are using my binaries or the develop binaries, replace the clientmessages-en binary in `data/bin` and `data/server/bin` with the one included here. There's a known issue with the message stores not being correctly binned with the develop branch.
 
 - Next, generate new templates with `mapserver.exe -productionmode -templates`
+
+- Finally, put the included data folder into your root installation. It includes the icons for the archetype, and without them you'll get some weirdness. If you want, you can pigg them up with the other textures.
 
 - Once you've got the bins, you should be able to run as normal. I have a separate setup for testing, and so I pigg the bins up with pig.exe or piglet and run that way.
 
@@ -91,6 +94,20 @@ of the box.
 - Streetwise: Willpower with a couple of Leadership-flavored powers. This one has the most new powers and is also the least-tested right now. Bruiser is the pet.
 
 - Super Serum: A combination of Invulnerability and Poisons, with the Commando as a pet.
+
+### TODO: More sets for support, realign them to resemble the Guardian's Composition sets on Rebirth. (They're already quite similar.)
+
+- Atmospheric Composition with a pet like /COXG/'s Wind Control Vortex
+
+- Energy Composition with a Force Construct
+
+- Ice Composition with an Ice Elemental or Snowman
+
+- Might modify Natural Instinct to more resemble Organic Composition/Bio Armor
+
+- Stone Composition with a Golem
+
+- Once Doppleganger pets are made more widely available, make a Twin set of some kind. If we alter Natural Instinct, this would likely become where Regen's powers get put for lack of a better place, alongside elements of Empathy.
 
 # Useful tidbits
 
