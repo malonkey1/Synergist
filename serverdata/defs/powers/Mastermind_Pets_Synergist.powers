@@ -46,7 +46,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -68,7 +69,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -90,7 +92,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -112,7 +115,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -134,7 +138,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -156,7 +161,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -178,7 +184,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -200,7 +207,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 
@@ -222,7 +230,8 @@ Power Mastermind_Pets.Synergist.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace		
+		StackType            kIgnore
+		CasterStackType      kCollective		
 		AllowCombatMods      kFalse
 	}
 }

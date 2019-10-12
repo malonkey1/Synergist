@@ -22201,7 +22201,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22224,7 +22224,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22247,7 +22247,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22270,7 +22270,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22293,7 +22293,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22316,7 +22316,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22339,7 +22339,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22362,7 +22362,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22385,7 +22385,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 	}
@@ -22408,7 +22408,7 @@ Power Inherent.Inherent.Partnership
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kIgnore
 		Requires             group target> MastermindPets eq
 		AllowCombatMods      kFalse
 		Reward               Mastermind_Pets.Synergist.Partnership

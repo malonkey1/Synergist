@@ -7,7 +7,7 @@ Class
 	PowerPoolCategory		"Pool"
 	DisplayShortHelp		"Synergist SHORT HELP"
 	DisplayHelp				"Synergist HELP TEXT THAT HAS TO BE LONGER THAN THE SHORT TEXT."
-	Icon					"v_archetypeicon_mastermind.tga"
+	Icon					"archetypeicon_synergist.tga"
 	AllowedOrigins			Science, Magic, Natural, Mutation, Technology
 	SpecialRestrictions		Hero
 	ConnectHpAndStatus		kFalse
