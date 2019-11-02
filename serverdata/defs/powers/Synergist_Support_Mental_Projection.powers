@@ -1,0 +1,3792 @@
+Power Synergist_Support.Mental_Projection.Doppleganger
+{
+	Name                 "Doppleganger"               
+	DisplayName          "Doppleganger"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kLocation
+	Range                60
+	EnduranceCost        19.5
+	IdeaCost             0
+	TravelSuppression    4
+	InterruptTime        0
+	TimeToActivate       4
+	RechargeTime         90
+	ActivatePeriod       0
+	EffectArea           kLocation
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDamage_Boost, kKnockback_Boost, kSpeedFlying_Boost, kRes_Damage_Boost, kAccuracy_Boost, kHeal_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_IllusionControl_Phantasm.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_IllusionControl_Phantasm.PFX
+	DisplayShortHelp     "Mental Projection"
+	DisplayHelp          "This power summons a doppleganger from your mind to assist you."
+	IconName             "Illusions_Phantasm.tga"
+	TimeToConfirm        0
+	ShowBuffIcon         kFalse
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEntCreate
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                3.5
+		Duration             99999
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		EntityDef            Doppels_DDDoppelgangerCommandable
+		PriorityList         Pet
+		// Additional Power Attribs
+		DoNotTint            1
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Mind_Link
+{
+	Name                 "Mind_Link"                
+	DisplayName          "P948434765"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kTeammate, kCaster
+	EntsAutoHit          kTeammate, kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0.3
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       3.67
+	RechargeTime         240
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               60
+	Arc                  0
+	AIReport             kNever
+	BoostsAllowed        kBuff_Defense_Boost, kBuff_ToHit_Boost
+	IgnoreStrength       True
+	VisualFX             "menu\powers\AnimFX\ArachnosWidow_MindLink.pfx"
+	include              menu\powers\AnimFX\ArachnosWidow_MindLink.pfx
+	DisplayShortHelp     "P2190406988"
+	DisplayHelp          "P759303019"
+	DisplayAttackerHit   "P3478802383"
+	DisplayVictimHit     "P2010842502"
+	IconName             "WidowTeamwork_MindLink.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        255
+	Cancelable           kTrue
+	DisplayTargetShortHelp "P925615151"
+	DisplayTargetHelp    "P701752453"
+
+	AttribMod
+	{
+		Name                 "Buff_ToHit"                  
+		Table                "Melee_Buff_ToHit"            
+		Aspect               kCur
+		Attrib               kToHit
+		Target               kTarget
+		Scale                0.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         GenericContinuing\BuffToHitCont.fx
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kPsionic
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kPsionic
+		Target               kCastersOwnerAndAllPets
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kMelee_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         GenericContinuing\BuffDefContinuing.fx
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kRanged_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kSmashing_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kLethal_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kFire_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kCold_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kEnergy_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kNegative_Energy_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kPsionic_Attack
+		Target               kTarget
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kMelee_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         GenericContinuing\BuffDefContinuing.fx
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kRanged_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kSmashing_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kLethal_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kFire_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kCold_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kEnergy_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kNegative_Energy_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kPsionic_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.9
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Daze
+{
+	Name                 "Daze"                        
+	DisplayName          "Daze"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kPsionic_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                50
+	EnduranceCost        7.8
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       2.03
+	RechargeTime         10
+	ActivatePeriod       0
+	EffectArea           kCone
+	Radius               50
+	Arc                  30
+	BoostsAllowed        kAccuracy_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kStunned_Boost, kRange_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_MindControl_Terrify.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_MindControl_Terrify.PFX
+	DisplayShortHelp     "P1395925999"
+	DisplayHelp          "P4023452119"
+	IconName             "MentalControl_Terrify.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        10
+	DisplayTargetShortHelp "P1315223086"
+	DisplayTargetHelp    "P3090719689"
+
+	AttribMod
+	{
+		Name                 "Stun"                        
+		Table                "Ranged_Stun"                 
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                10.000
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            2
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2160290682"
+		DisplayVictimHit     "P4062395835"
+		StackType            kStack
+		ConditionalFX        GenericContinuing/StunContinuing.fx
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                2
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2160290682"
+		DisplayVictimHit     "P4062395835"
+		StackType            kStack
+		ConditionalFX        GenericContinuing/StunContinuing.fx
+		Requires             enttype target> player eq
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Group_Invisibility
+{
+	Name                 "Group_Invisibility"          
+	DisplayName          "P1245546238"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kTeammate, kCaster
+	EntsAutoHit          kTeammate, kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        10.4
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       2.03
+	RechargeTime         240
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               25
+	Arc                  0
+	AIReport             kNever
+	BoostsAllowed        kEnduranceDiscount_Boost, kRecharge_Boost, kBuff_Defense_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_IllusionControl_GroupInvisibility.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_IllusionControl_GroupInvisibility.PFX
+	DisplayShortHelp     "P4270190323"
+	DisplayHelp          "P572103610"
+	DisplayAttackerHit   "P1701765549"
+	DisplayVictimHit     "P4071210598"
+	IconName             "Illusions_GiveInvisibility.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        255
+	Cancelable           kTrue
+	DisplayTargetShortHelp "P3665457053"
+	DisplayTargetHelp    "P3770865509"
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kStealthRadius
+		Target               kTarget
+		Scale                60
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kStealthRadiusPlayer
+		Target               kTarget
+		Scale                667
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kMelee_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kRanged_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kSmashing_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kLethal_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kFire_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kCold_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kEnergy_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kNegative_Energy_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kPsionic_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, HitByFoe, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kMelee_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kRanged_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kSmashing_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kLethal_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kFire_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kCold_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kEnergy_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kNegative_Energy_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Ranged_Buff_Def"             
+		Aspect               kCur
+		Attrib               kPsionic_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Clear_Mind
+{
+	Name                 "Clear_Mind"                  
+	DisplayName          "P2171100930"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kFriend
+	EntsAutoHit          kFriend
+	Target               kFriend
+	Range                70
+	EnduranceCost        5.2
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       1
+	RechargeTime         4
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerBuff_Empathy_ClearMind.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerBuff_Empathy_ClearMind.PFX
+	DisplayShortHelp     "P3882233887"
+	DisplayHelp          "P3640605281"
+	DisplayAttackerHit   "P1987621853"
+	DisplayVictimHit     "P2884066914"
+	IconName             "Empathy_MindWall.tga"
+	TimeToConfirm        0
+	Cancelable           kTrue
+	DisplayTargetShortHelp "P1474485343"
+	DisplayTargetHelp    "P3640605281"
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                -30
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kSleep
+		Target               kTarget
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kSleep
+		Target               kTarget
+		Scale                -30
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                -30
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                -30
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kConfused
+		Target               kTarget
+		Scale                -30
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kTerrorized
+		Target               kTarget
+		Scale                -30
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kStun
+		Target               kTarget
+		Scale                3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kSleep
+		Target               kTarget
+		Scale                8
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kHeld
+		Target               kTarget
+		Scale                3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kConfused
+		Target               kTarget
+		Scale                3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kTerrorized
+		Target               kTarget
+		Scale                3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kRes
+		Attrib               kPerceptionRadius
+		Target               kTarget
+		Scale                2.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ContinuingFX         POWERS/ability/StrengthContinuing.fx
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kPerceptionRadius
+		Target               kTarget
+		Scale                2.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Decoy
+{
+	Name                 "Decoy"                       
+	DisplayName          "P2854556052"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kLocation
+	Range                80
+	EnduranceCost        26
+	IdeaCost             0
+	TravelSuppression    4
+	InterruptTime        0
+	TimeToActivate       3.1
+	RechargeTime         240
+	ActivatePeriod       0
+	EffectArea           kLocation
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDamage_Boost, kAccuracy_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_IllusionControl_Decoy.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_IllusionControl_Decoy.PFX
+	DisplayShortHelp     "P2044656699"
+	DisplayHelp          "P2106256602"
+	IconName             "Illusions_PhantomArmy.tga"
+	TimeToConfirm        0
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEntCreate
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             60
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P998401764"
+		StackType            kReplace
+		EntityDef            Pets_Decoy
+		PriorityList         PL_FightPreferRanged
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEntCreate
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                1
+		Duration             60
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		EntityDef            Pets_Decoy
+		PriorityList         PL_FightPreferRanged
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEntCreate
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                2
+		Duration             60
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		EntityDef            Pets_Decoy
+		PriorityList         PL_FightPreferRanged
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Foresight
+{
+	Name                 "Foresight"                   
+	DisplayName          "P772548710"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kFriend, kCaster
+	EntsAutoHit          kFriend, kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0
+	RechargeTime         0
+	ActivatePeriod       0.5
+	EffectArea           kSphere
+	Radius               60
+	Arc                  0
+	BoostsAllowed        kRes_Damage_Boost, kBuff_Defense_Boost
+	IgnoreStrength       True
+	DisplayShortHelp     "P2384012872"
+	DisplayHelp          "P2928468602"
+	IconName             "Teamwork_Foresight.tga"
+	TimeToConfirm        0
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kPsionic
+		Target               kTarget
+		Scale                0.2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+		AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kPsionic
+		Target               kTarget
+		Scale                0.2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kStun
+		Target               kTarget
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kSleep
+		Target               kTarget
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kHeld
+		Target               kTarget
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kTerrorized
+		Target               kTarget
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kConfused
+		Target               kTarget
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kDefense
+		Target               kTarget
+		Scale                0.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kLethal
+		Target               kTarget
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kFire
+		Target               kTarget
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kCold
+		Target               kTarget
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kEnergy
+		Target               kTarget
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kRanged_Attack
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kMelee_Attack
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kStr
+		Attrib               kMelee_Elude
+		Target               kTarget
+		Scale                0.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kStr
+		Attrib               kRanged_Elude
+		Target               kTarget
+		Scale                0.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kStr
+		Attrib               kAOE_Elude
+		Target               kTarget
+		Scale                0.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kPsionic
+		Target               kCastersOwnerAndAllPets
+		Scale                0.2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kStun
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kSleep
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kImmobilize
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kHeld
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kTerrorized
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kConfused
+		Target               kCastersOwnerAndAllPets
+		Scale                0.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kDefense
+		Target               kCastersOwnerAndAllPets
+		Scale                0.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kSmashing
+		Target               kCastersOwnerAndAllPets
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kLethal
+		Target               kCastersOwnerAndAllPets
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kFire
+		Target               kCastersOwnerAndAllPets
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kCold
+		Target               kCastersOwnerAndAllPets
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kEnergy
+		Target               kCastersOwnerAndAllPets
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               knegative_Energy
+		Target               kCastersOwnerAndAllPets
+		Scale                0
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        75 kHitPoints% source> - 0 100 minmax 60 / 0.25 *
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kRanged_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kMelee_Attack
+		Target               kCastersOwnerAndAllPets
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kStr
+		Attrib               kMelee_Elude
+		Target               kCastersOwnerAndAllPets
+		Scale                0.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kStr
+		Attrib               kRanged_Elude
+		Target               kCastersOwnerAndAllPets
+		Scale                0.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kStr
+		Attrib               kAOE_Elude
+		Target               kCastersOwnerAndAllPets
+		Scale                0.1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Mass_Placate
+{
+	Name                 "Mass_Placate"                     
+	DisplayName          "P1943041994"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             0.8
+	AttackTypes          kPsionic_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                80
+	EnduranceCost        26
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       1.67
+	RechargeTime         240
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               25
+	Arc                  0
+	AIReport             kNever
+	BoostsAllowed        kAccuracy_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kConfuse_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_MindControl_MassConfusion.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_MindControl_MassConfusion.PFX
+	DisplayShortHelp     "P2684033640"
+	DisplayHelp          "P1866824923"
+	IconName             "MentalControl_Confuse.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        16
+	DisplayTargetShortHelp "P1116895679"
+	DisplayTargetHelp    "P4213198885"
+
+	AttribMod
+	{
+		Name                 "Taunt"                       
+		Table                "Melee_Taunt"                 
+		Aspect               kAbs
+		Attrib               kPlacate
+		Target               kTarget
+		Scale                10
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            4
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P254088221"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Taunt"                       
+		Table                "Melee_Taunt"                 
+		Aspect               kAbs
+		Attrib               kPlacate
+		Target               kTarget
+		Scale                6
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            4
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P254088221"
+		DisplayVictimHit     "P1864267621"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kStealthRadius
+		Target               kSelf
+		Scale                150
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0.25
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         V_COV\Powers\Ninjitsu\Hide.fx
+		CancelEvents         Attacked, Damaged, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kStealthRadiusPlayer
+		Target               kSelf
+		Scale                380
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0.25
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, Damaged, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kMeter
+		Target               kSelf
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0.25
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, Damaged, MissionObjectClick
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kTranslucency
+		Target               kSelf
+		Scale                0.2
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0.25
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		CancelEvents         Attacked, Damaged, MissionObjectClick
+	}
+}
+
+Power Synergist_Support.Mental_Projection.Strength_of_Will
+{
+	Name                 "Strength_of_Will"            
+	DisplayName          "P1043791663"
+	ModesDisallowed      kDisable_All, kSynergist_Transform_Mode
+	Type                 kClick
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        2.6
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       3.1
+	RechargeTime         300
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kEnduranceDiscount_Boost, kRes_Damage_Boost
+	IgnoreStrength       True
+	// Additional Power Factors
+	StrengthsDisallowed  kRechargeTime
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\StalkerDefense_Willpower_StrengthofWill.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\StalkerDefense_Willpower_StrengthofWill.PFX
+	DisplayShortHelp     "P2655318871"
+	DisplayHelp          "P2949977880"
+	DisplayAttackerHit   "P92195323"
+	IconName             "Willpower_StrengthOfWill.tga"
+	TimeToConfirm        0
+	CastThroughHold      kTrue
+	CastThroughSleep     kTrue
+	CastThroughStun      kTrue
+	CastThroughTerrorize kTrue
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kSmashing
+		Target               kCastersOwnerAndAllPets
+		Scale                1.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kLethal
+		Target               kCastersOwnerAndAllPets
+		Scale                1.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kFire
+		Target               kCastersOwnerAndAllPets
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kCold
+		Target               kCastersOwnerAndAllPets
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kEnergy
+		Target               kCastersOwnerAndAllPets
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               knegative_Energy
+		Target               kCastersOwnerAndAllPets
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kPsionic
+		Target               kCastersOwnerAndAllPets
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kToxic
+		Target               kCastersOwnerAndAllPets
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockup
+		Target               kCastersOwnerAndAllPets
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kKnockup
+		Target               kCastersOwnerAndAllPets
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kCastersOwnerAndAllPets
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kKnockback
+		Target               kCastersOwnerAndAllPets
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kRepel
+		Target               kCastersOwnerAndAllPets
+		Scale                -10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kRepel
+		Target               kCastersOwnerAndAllPets
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kStun
+		Target               kCastersOwnerAndAllPets
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kCastersOwnerAndAllPets
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX2
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kSleep
+		Target               kCastersOwnerAndAllPets
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kCastersOwnerAndAllPets
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kStun
+		Target               kCastersOwnerAndAllPets
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX3
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kHeld
+		Target               kCastersOwnerAndAllPets
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX4
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kSleep
+		Target               kCastersOwnerAndAllPets
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kImmobilize
+		Target               kCastersOwnerAndAllPets
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kRecovery
+		Target               kTarget
+		Scale                0.3
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         GenericContinuing\BuffEndContinuing.fx
+	}
+
+	AttribMod
+	{
+		Name                 "GlobalCrash"                 
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kEndurance
+		Target               kSelf
+		Scale                -0.5
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                120
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kGlobalChanceMod
+		Target               kTarget
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Reward               PresenceHealHigh
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kGlobalChanceMod
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Reward               PresenceHealLow
+		AllowCombatMods      kFalse
+	}
+
+		AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.25
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kFire
+		Target               kTarget
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kCold
+		Target               kTarget
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kEnergy
+		Target               kTarget
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kPsionic
+		Target               kTarget
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Melee_Res_Dmg"               
+		Aspect               kRes
+		Attrib               kToxic
+		Target               kTarget
+		Scale                0.63
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kRepel
+		Target               kTarget
+		Scale                -10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kRes
+		Attrib               kRepel
+		Target               kTarget
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kStun
+		Target               kTarget
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX2
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kSleep
+		Target               kTarget
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                -50
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap? !
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kStun
+		Target               kTarget
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX3
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kHeld
+		Target               kTarget
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX4
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kSleep
+		Target               kTarget
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Melee_Res_Boolean"           
+		Aspect               kRes
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             isPVPMap?
+	}
+}

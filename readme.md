@@ -19,7 +19,7 @@ Basically, it's a newly made Archetype for City of heroes. It has:
 # SETUP:
 
 To set this up on your own server, you need to be set up for binning as explained [in this handy page](https://corps.ouro-comdev.com/index.php?title=Server_Setup_for_Making_Bins). Then you need the following:
-- I recommend you use the .exes included in this repo, as the existing ones don't have the `IsPetClass` flag available for classes, and using any binaries other than the ones I've provided will probably crash.
+- I recommend you use the .exes included in the folder `Build Bins with these exes`, as the existing ones don't have the `IsPetClass` flag available for classes, and using any binaries other than the ones I've provided will probably crash. It's a version of master modified to incorporate the pet class flag.
 
   - Optionally, you can edit the class .def files to comment out the `IsPetClass` line in `C_PC_Duo.def` and `V_PC_Mastermind.def` and build with the old exes, but you won't have bodyguarding or inspiration sharing in this case.
 
@@ -49,13 +49,15 @@ To set this up on your own server, you need to be set up for binning as explaine
 
   - It will complain about "BAD TRANSLATION" errors. Ignore it. It's just because I used native strings instead of pstrings like a dirty nasty boy.
 
-  - After you bin, if you are using my binaries or the develop binaries, replace the clientmessages-en binary in `data/bin` and `data/server/bin` with the one included here. There's a known issue with the message stores not being correctly binned with the develop branch.
+   - TODO: Learn how to do message stores
 
-- Next, generate new templates with `mapserver.exe -productionmode -templates`
+  - If you bin with Develop branch EXEs, you'll probably get problems with message stores. If you do, make sure to keep a copy of `clientmessages-en.bin` to replace the bad message store bin develop produces.
+
+- Next, generate new templates with `mapserver.exe -productionmode -templates` using the exes in `build templates and Run with these exes`
 
 - Finally, put the included data folder into your root installation. It includes the icons for the archetype, and without them you'll get some weirdness. If you want, you can pigg them up with the other textures.
 
-- Once you've got the bins, you should be able to run as normal. I have a separate setup for testing, and so I pigg the bins up with pig.exe or piglet and run that way.
+- Once you've got the bins, you should be able to run as normal. I have a separate setup for testing, and so I pigg the bins up with pig.exe or piglet and run that way. You will want to run using the exes I've provided in order to use the pet features.
 
 - If your client or server starts getting all cattywampus after this, it means something is all hinky in the attributes table in your database. If that's the case, you may need to delete cohdb from your database (dbserver will rebuild it.) If you have characters, I recommend backing them up.
 
@@ -95,6 +97,8 @@ of the box.
 
 - Super Serum: A combination of Invulnerability and Poisons, with the Commando as a pet.
 
+- Mental Projection: A combination of light controls in the vein of Mind Control, plus some abilities culled from Fortunata Teamwork and including a modified form of the Phantasm from Illusion control, the Doppleganger! This uses newly-developed doppleganger flags to create a look-alike of its master with illusion powers.
+
 ### TODO: More sets for support, realign them to resemble the Guardian's Composition sets on Rebirth. (They're already quite similar.)
 
 - Atmospheric Composition with a pet like /COXG/'s Wind Control Vortex
@@ -107,7 +111,7 @@ of the box.
 
 - Stone Composition with a Golem
 
-- Once Doppleganger pets are made more widely available, make a Twin set of some kind. If we alter Natural Instinct, this would likely become where Regen's powers get put for lack of a better place, alongside elements of Empathy.
+- ~Once Doppleganger pets are made more widely available, make a Twin set of some kind. If we alter Natural Instinct, this would likely become where Regen's powers get put for lack of a better place, alongside elements of Empathy.~ (see above)
 
 # Useful tidbits
 

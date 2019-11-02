@@ -571,3 +571,85 @@ PowerSet Synergist_Support.Super_Serum
 	MaxDifficulty 9999
 
 }
+
+PowerSet Synergist_Support.Mental_Projection
+{
+	Name             "Mental_Projection"
+	DisplayName      "Mental Projection"
+	DisplayShortHelp "Create a telepathic projection of yourself to protect those around you"
+	DisplayHelp      "You can project your will onto those around you, establishing telepathic defenses for yourself and others and using an astral projection of yourself to fight."
+	IconName         "Illusion_Control_set.ico"
+
+	Powers Synergist_Support.Mental_Projection.Doppleganger
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Mind_Link
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Daze
+	Available 3
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Group_Invisibility
+	Available 9
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Clear_Mind
+	Available 15
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Decoy
+	Available 19
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Foresight
+	Available 27
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Mass_Placate
+	Available 34
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Synergist_Support.Mental_Projection.Strength_of_Will
+	Available 37
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}

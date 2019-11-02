@@ -8,4 +8,5 @@ PowerCategory Synergist_Support
 	PowerSets Synergist_Support.Robotics
 	PowerSets Synergist_Support.Streetwise
 	PowerSets Synergist_Support.Super_Serum
+	PowerSets Synergist_Support.Mental_Projection
 }
