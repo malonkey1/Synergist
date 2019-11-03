@@ -48,6 +48,7 @@ Power Synergist_Support.Mental_Projection.Doppleganger
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		EntityDef            Doppels_DDDoppelgangerCommandable
+		Params               Doppleganger_Phantasm
 		PriorityList         Pet
 		// Additional Power Attribs
 		DoNotTint            1
