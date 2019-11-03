@@ -66,17 +66,17 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 	EntsAutoHit          kTeammate, kCaster
 	Target               kCaster
 	Range                0
-	EnduranceCost        0.3
+	EnduranceCost        10.0
 	IdeaCost             0
 	InterruptTime        0
 	TimeToActivate       3.67
-	RechargeTime         240
+	RechargeTime         120
 	ActivatePeriod       0
 	EffectArea           kSphere
 	Radius               60
 	Arc                  0
 	AIReport             kNever
-	BoostsAllowed        kBuff_Defense_Boost, kBuff_ToHit_Boost
+	BoostsAllowed        kBuff_Defense_Boost, kBuff_ToHit_Boost, kRecharge_Boost
 	IgnoreStrength       True
 	VisualFX             "menu\powers\AnimFX\ArachnosWidow_MindLink.pfx"
 	include              menu\powers\AnimFX\ArachnosWidow_MindLink.pfx
@@ -162,7 +162,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kMelee_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -184,7 +184,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kRanged_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -205,7 +205,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kAOE_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -226,7 +226,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kSmashing_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -247,7 +247,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kLethal_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -268,7 +268,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kFire_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -289,7 +289,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kCold_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -310,7 +310,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kEnergy_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -331,7 +331,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kNegative_Energy_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -352,7 +352,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kPsionic_Attack
 		Target               kTarget
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -373,7 +373,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kMelee_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -385,7 +385,6 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		ContinuingFX         GenericContinuing\BuffDefContinuing.fx
 	}
 
 	AttribMod
@@ -395,7 +394,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kRanged_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -416,7 +415,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kAOE_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -437,7 +436,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kSmashing_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -458,7 +457,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kLethal_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -479,7 +478,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kFire_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -500,7 +499,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kCold_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -521,7 +520,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kEnergy_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -542,7 +541,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kNegative_Energy_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -563,7 +562,7 @@ Power Synergist_Support.Mental_Projection.Mind_Link
 		Aspect               kCur
 		Attrib               kPsionic_Attack
 		Target               kCastersOwnerAndAllPets
-		Scale                0.9
+		Scale                0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -1187,7 +1186,7 @@ Power Synergist_Support.Mental_Projection.Clear_Mind
 	EntsAffected         kFriend
 	EntsAutoHit          kFriend
 	Target               kFriend
-	Range                70
+	Range                60
 	EnduranceCost        5.2
 	IdeaCost             0
 	InterruptTime        0
